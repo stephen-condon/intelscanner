@@ -1,0 +1,36 @@
+SIG INT REPORT FOR Dec 07, 41
+
+Kimura Det  is loaded on a Hakone Maru class xAP moving to Legaspi.
+48th Engineer Regiment is located at Pescadores(84,63).
+Eastern Army is located at Tokyo(114,60).
+36th Division is located at Tangshan(96,41).
+1st Manchukuo Division is located at Changchun(106,41).
+14th JAAF AF Coy  is located at Takao(84,65).
+Heavy Volume of Radio transmissions detected at 111,76.
+1/41st Infantry Regiment is loaded on a Yusen N Cargo class xAK moving to Singora.
+3/56th Recon Regiment is loaded on a Husimi Cargo class xAK moving to Patani.
+6th Guards Division is located at Cam Ranh Bay(64,72).
+Heavy Volume of Radio transmissions detected at Samah (69,63).
+Heavy Volume of Radio transmissions detected at Saigon (60,71).
+55th Engineer Regiment is located at Battambang(58,65).
+25th Ind. Engineer Regiment is located at Sendai(117,58).
+3rd Division is located at Wuchang(84,51).
+Heavy Volume of Radio transmissions detected at 90,96.
+1/32nd Field AA Battalion is loaded on a Japanese xAK moving to Nakhon Si Thammarat.
+China Expeditionary Army is located at Nanking(91,52).
+Radio transmissions detected at 135,123.
+Heavy Volume of Radio transmissions detected at 68,65.
+13935 men are based at Kotou (116,42).
+2nd Border Defense Fortress is located at 111,43.
+1/8th Tank Regiment is loaded on xAK Kosin Maru moving to Kendari.
+9th Division is located at 111,43.
+12/14th Division is planning for an attack on Donbaik.
+18/14th Division is loaded on xAK Argun Maru moving to Donbaik.
+11/65th Division is loaded on AMC Kinryu Maru moving to Kalidjati.
+a Japanese SS is moving to 132,115.
+a 14m Type LB Daihatsu class LB is moving to Fusan (103,55).
+351 aircraft are based at Nagoya (111,60).
+Radio call sign of BB Kurama detected at 106,65.
+SS I-74 is moving to 60,102.
+xAKL Kikuryu Maru is moving to Munda (111,134).
+4/41st Field AA Battalion is loaded on xAKL Genmei Maru at Biak (87,110).

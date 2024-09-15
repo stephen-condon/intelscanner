@@ -1,0 +1,8 @@
+SIG INT REPORT FOR Dec 07, 41
+
+Heavy Volume of Radio transmissions detected at Singapore (50,84).
+Radio transmissions detected at Ondorhaan (100,27).
+Heavy Volume of Radio transmissions detected at Pearl Harbor (180,107).
+Radio transmissions detected at Hilo (183,111).
+Radio transmissions detected at Mogocha (112,25).
+Radio transmissions detected at 85,42.
