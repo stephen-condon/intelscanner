@@ -372,5 +372,3 @@ func shipAtAdapterBase(submatches [][]string) (*ParsedLine, error) {
 
 	return nil, nil
 }
-
-// TODO: Define remaining needed adapters

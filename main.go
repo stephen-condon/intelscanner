@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	// intelData, err := scan.Process("./scan/test", "Allies")
 	args := os.Args[1:]
 
 	if len(args) == 0 {
