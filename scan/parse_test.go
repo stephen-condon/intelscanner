@@ -70,7 +70,7 @@ func TestDisplay(t *testing.T) {
 		{ParsedLine{Location: GridLocation{X: 1, Y: 2}, Base: "Gotham", Content: "test content", Ship: "abcd", Turn: "test turn"}, "test turn: test content at Gotham (1,2)"},
 	}
 	for _, tc := range tests {
-		displayedString := tc.parsed.display()
+		displayedString := tc.parsed.Display()
 
 		if displayedString != tc.expected {
 			t.Errorf("Received %v, expected %v", displayedString, tc.expected)
@@ -152,7 +152,7 @@ func BenchmarkReadHeader(b *testing.B) {
 func BenchmarkDisplay(b *testing.B) {
 	obj := ParsedLine{Location: GridLocation{X: 1, Y: 2}, Base: "", Content: "test content", Ship: "", Turn: "test turn"}
 	for i := 0; i < b.N; i++ {
-		obj.display()
+		obj.Display()
 	}
 }
 

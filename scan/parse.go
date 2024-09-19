@@ -58,7 +58,7 @@ func readHeader(line string) (string, error) {
 	return submatches[0][1], nil
 }
 
-func (pl *ParsedLine) display() string {
+func (pl *ParsedLine) Display() string {
 	var display string
 	if len(pl.Base) > 0 {
 		display = fmt.Sprintf(`%v: %v at %v (%v,%v)`, pl.Turn, pl.Content, pl.Base, pl.Location.X, pl.Location.Y)

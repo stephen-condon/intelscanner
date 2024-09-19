@@ -32,6 +32,6 @@ func main() {
 	filteredValues := searcher.SearchBase(searchString)
 
 	for _, value := range filteredValues {
-		fmt.Println(value)
+		fmt.Println(value.Display())
 	}
 }
