@@ -11,8 +11,8 @@ func TestReadDirectoryAndFilter(t *testing.T) {
 		firstExpected string
 	}
 	tests := []test{
-		{folder: "/Volumes/[C] Windows 11/Matrix Games/Witp - 1126b - Ironman/SAVE/archive", side: "Allies", firstExpected: "asigint_411207.txt"},
-		{folder: "/Volumes/[C] Windows 11/Matrix Games/Witp - 1126b - Ironman/SAVE/archive", side: "Japan", firstExpected: "jsigint_411207.txt"},
+		{folder: "./test", side: "Allies", firstExpected: "asigint_411207.txt"},
+		{folder: "./test", side: "Japan", firstExpected: "jsigint_411207.txt"},
 	}
 
 	for _, tc := range tests {
@@ -43,8 +43,8 @@ func TestReadFile(t *testing.T) {
 		filename string
 	}
 	tests := []test{
-		{folder: "/Volumes/[C] Windows 11/Matrix Games/Witp - 1126b - Ironman/SAVE/archive", side: "Allies", filename: "asigint_411207.txt"},
-		{folder: "/Volumes/[C] Windows 11/Matrix Games/Witp - 1126b - Ironman/SAVE/archive", side: "Japan", filename: "jsigint_411207.txt"},
+		{folder: "./test", side: "Allies", filename: "asigint_411207.txt"},
+		{folder: "./test", side: "Japan", filename: "jsigint_411207.txt"},
 	}
 
 	for _, tc := range tests {
