@@ -12,10 +12,11 @@ func TestProcess(t *testing.T) {
 		expected    Arguments
 	}
 	tests := []test{
-		{testArgs: []string{"program_name", "testB", "testC=testD"}, expectedErr: "", expected: Arguments{"testB", "testD", "testC"}},
+		{testArgs: []string{"program_name", "testB", "testC=testD"}, expectedErr: "", expected: Arguments{"testB", "testD", "testC", false}},
 		{testArgs: []string{"program_name", "testB", "testC"}, expectedErr: "pass properly formatted argument", expected: Arguments{}},
 		{testArgs: []string{"program_name", "testB"}, expectedErr: "missing search string", expected: Arguments{}},
 		{testArgs: []string{"program_name"}, expectedErr: "missing search string", expected: Arguments{}},
+		{testArgs: []string{"program_name", "version"}, expectedErr: "", expected: Arguments{"", "", "", true}},
 	}
 
 	for _, tc := range tests {
@@ -42,6 +43,9 @@ func TestProcess(t *testing.T) {
 			}
 			if tc.expected.SearchType != result.SearchType {
 				t.Errorf(`Expected searchType %v, received %v`, tc.expected.SearchType, result.SearchType)
+			}
+			if tc.expected.Version != result.Version {
+				t.Errorf(`Expected Version %v, received %v`, tc.expected.SearchType, result.SearchType)
 			}
 		}
 	}

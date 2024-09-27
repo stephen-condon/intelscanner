@@ -13,6 +13,7 @@ type Arguments struct {
 	Operation  string
 	BaseSearch string
 	SearchType string
+	Version    bool
 }
 
 func Process() (*Arguments, error) {
@@ -32,6 +33,11 @@ func processCliArgs() (*Arguments, error) {
 	// fmt.Println(args)
 
 	if len(args) < 2 {
+		if len(args) == 1 && args[0] == "version" {
+			return &Arguments{
+				Version: true,
+			}, nil
+		}
 		return nil, fmt.Errorf("missing search string")
 		// return nil, fmt.Errorf("You must pass a search string")
 	}

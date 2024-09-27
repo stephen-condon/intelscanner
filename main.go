@@ -15,6 +15,16 @@ func main() {
 		os.Exit(1)
 	}
 
+	if args.Version {
+		raw, err := os.ReadFile("./version")
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
+		fmt.Println(string(raw))
+		os.Exit(0)
+	}
+
 	config, err := conf.Read("./intelscanner.conf")
 	if err != nil {
 		fmt.Println(err)
