@@ -56,3 +56,9 @@ on.
 ```
 
 This will return all sigint events dealing with Shanghai
+
+### Check Version
+
+```
+./intel-scanner.exe version
+```
