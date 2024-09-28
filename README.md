@@ -47,12 +47,20 @@ side=Allies
 ```
 
 ## Running
+
+### Search By Base
+
 The program runs in the command line as one run through - every search will reread & parse
-all files in the directory. It has one required positional argument, the substring to search
-on.
+all files in the directory. 
 
 ```
-./intel-scanner.exe Shang
+./intel-scanner.exe search base=Shang
 ```
 
 This will return all sigint events dealing with Shanghai
+
+### Check Version
+
+```
+./intel-scanner.exe version
+```

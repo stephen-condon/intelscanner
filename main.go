@@ -2,19 +2,28 @@ package main
 
 import (
 	"fmt"
+	"intel-scanner/cli"
 	"intel-scanner/conf"
 	"intel-scanner/scan"
 	"os"
 )
 
 func main() {
-	args := os.Args[1:]
-
-	if len(args) == 0 {
-		fmt.Println("You must pass a search string")
+	args, err := cli.Process()
+	if err != nil {
+		fmt.Println(err)
 		os.Exit(1)
 	}
-	searchString := args[0]
+
+	if args.Version {
+		raw, err := os.ReadFile("./version")
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
+		fmt.Println(string(raw))
+		os.Exit(0)
+	}
 
 	config, err := conf.Read("./intelscanner.conf")
 	if err != nil {
@@ -29,7 +38,7 @@ func main() {
 	}
 
 	searcher := scan.NewSearcher(intelData)
-	filteredValues := searcher.SearchBase(searchString)
+	filteredValues := searcher.SearchBase(args.BaseSearch)
 
 	for _, value := range filteredValues {
 		fmt.Println(value.Display())
